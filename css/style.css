@@ -48,3 +48,25 @@
 }
 
 
+
+.bodyls {
+    background-repeat: no-repeat;
+    background-position: 0vw 0vh;   
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+
+
+
+
+
+
+
+}
+
+
