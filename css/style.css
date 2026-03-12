@@ -22,20 +22,25 @@ Global: Text
     --secondary-text-color: #ffffffb2;
 
     /* Font size */
-    --titleH1: clamp(1rem, 1.1vw, 100rem);
-    --titleH2: clamp(1rem, 1.1vw, 100rem);
+    --titleH1: clamp(2rem, 2.3vw, 100rem);
+    --titleH2: clamp(1rem, 1.3vw, 100rem);
     --titleH3: clamp(1rem, 1.1vw, 100rem);
     --containerSubText: clamp(1rem, 1.1vw, 100rem);
 
     /* Padding */
     --main-padding: clamp(1.5rem, 3%, 100rem) clamp(1.5rem, 5%, 100rem);
     --card-padding: clamp(13px, 1vw, 100rem);
-    --big-card-padding: clamp(1rem, 1.5vw, 100rem);
+    --big-card-padding: clamp(1.3rem, 1.7vw, 100rem);
     --LR-big-padding: clamp(.5rem, 7.5vw, 100rem);
     --LR-bottom-padding: clamp(2.5rem, 3vw, 100rem);
 
+    --input: clamp(13px, 1vw, 100rem) 0 clamp(13px, 1vw, 100rem) clamp(13px, 1vw, 100rem);
+
     /* Margin */
     --main-margin: clamp(1rem, 3%, 100rem) 0;
+
+    /* Gap */
+    --regularSVG: clamp(.5rem, 1vw, 100rem);
 }
 
 /* === Home Page === */
@@ -105,23 +110,66 @@ Global: Text
 /* === Add Team Page === */
 .body--add-teams{
     padding: var(--main-padding);
-    background-image: url(../images/ogen.png);
+    background-image: url(../images/eyes.png);
     color: var(--primary-text-color);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .body--add-teams img{
     height: 30px;
 }
 
+/* --- Main --- */
+.main--add-teams h1:first-of-type{
+    font-size: var(--titleH1);
+    color: var(--primary-text-color);
+}
+
+.main--add-teams p:first-of-type{
+    font-size: var(--containerSubText);
+    color: var(--secondary-text-color);
+}
+
 /* --- Container Section --- */
-.container--add-teams{
-    background-color: #454943;
+.sec--add-teams{
+    background-color: rgba(69, 73, 67, 0.27);
     padding: var(--big-card-padding);
     border-radius: 7px;
-    width: 60vw;
+    position: relative;
+    width: 100%;
+}
+
+/* Title First */
+.sec--add-teams .first{
+    font-size: var(--titleH2);
+}
+
+/* SVG + Title */
+.sec--add-teams .svg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--primary-text-color);
+    gap: var(--regularSVG);
+}
+
+/* First input */
+.sec--add-teams h3:first-of-type{
+    font-size: var(--titleH3);
+}
+
+.sec--add-teams input{
+    width: 100%;
+    border-radius: 7px;
+    padding: var(--input);
+}
+
+.single-teamlid--add-teams{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--regularSVG);
 }
