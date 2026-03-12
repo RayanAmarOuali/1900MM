@@ -7,6 +7,12 @@ New Section (in a page): --- Section Name ---
 Global: Text
  */
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 :root{
     /* colors */
     /* --primary-color: #;
@@ -34,7 +40,7 @@ Global: Text
     --LR-big-padding: clamp(.5rem, 7.5vw, 100rem);
     --LR-bottom-padding: clamp(2.5rem, 3vw, 100rem);
 
-    --input: clamp(13px, 1vw, 100rem) 0 clamp(13px, 1vw, 100rem) clamp(13px, 1vw, 100rem);
+    --input: clamp(13px, 1vw, 100rem);
 
     /* Margin */
     --main-margin: clamp(1rem, 3%, 100rem) 0;
@@ -165,6 +171,7 @@ Global: Text
     width: 100%;
     border-radius: 7px;
     padding: var(--input);
+    box-shadow: 0px 0px 13px 1px rgba(191,229,78,0.3);
 }
 
 .single-teamlid--add-teams{
