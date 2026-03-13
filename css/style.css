@@ -30,7 +30,7 @@ Global: Text
     /* Font size */
     --titleH1: clamp(2rem, 2.3vw, 100rem);
     --titleH2: clamp(1rem, 1.3vw, 100rem);
-    --titleH3: clamp(1rem, 1.1vw, 100rem);
+    --titleH3: clamp(1rem, 1.3vw, 100rem);
     --containerSubText: clamp(1rem, 1.1vw, 100rem);
 
     /* Padding */
@@ -41,6 +41,8 @@ Global: Text
     --LR-bottom-padding: clamp(2.5rem, 3vw, 100rem);
 
     --input: clamp(13px, 1vw, 100rem);
+
+    --button: clamp(.5rem, .6vw, 100rem) clamp(1rem, 1.2vw, 100rem);
 
     /* Margin */
     --main-margin: clamp(1rem, 3%, 100rem) 0;
@@ -124,10 +126,6 @@ Global: Text
     align-items: center;
 }
 
-.body--add-teams img{
-    height: 30px;
-}
-
 /* --- Main --- */
 .main--add-teams h1:first-of-type{
     font-size: var(--titleH1);
@@ -146,6 +144,18 @@ Global: Text
     border-radius: 7px;
     position: relative;
     width: 100%;
+    margin-top: clamp(1rem, 1.5vw, 100rem);
+}
+
+/* SVG Overall */
+.sec--add-teams .svg img{
+    height: clamp(2rem, 3vw, 100rem);
+    filter: brightness(0) saturate(100%) invert(61%) sepia(13%) saturate(1505%) hue-rotate(39deg) brightness(91%) contrast(84%);
+}
+
+.teamlid--add-teams .single-teamlid--add-teams img{
+    height: clamp(1.5rem, 2.5vw, 100rem);
+    filter: brightness(0) saturate(100%) invert(52%) sepia(3%) saturate(6635%) hue-rotate(39deg) brightness(83%) contrast(93%);
 }
 
 /* Title First */
@@ -162,21 +172,89 @@ Global: Text
     gap: var(--regularSVG);
 }
 
+/* Sub title mb */
+.sec--add-teams .subtitle:first-of-type{
+    margin-top: clamp(1rem, 1.2vw, 100rem);
+    margin-bottom: clamp(.5rem, 1vw, 100rem);
+}
+
+.sec--add-teams .subtitle{
+    margin-bottom: clamp(1rem, 1.3vw, 100rem);
+    font-size: var(--titleH3);
+}
 /* First input */
 .sec--add-teams h3:first-of-type{
     font-size: var(--titleH3);
 }
 
+/* Split Line */
+.sec--add-teams .line{
+    width: 100%;
+    height: 2.5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 13px 1px rgba(191,229,78,0.3);
+    background-color: rgba(167, 163, 163, 0.5);
+    margin: clamp(1.3rem, 1.5vw, 100rem) 0;
+}
+
+/* Main Inputs */
 .sec--add-teams input{
     width: 100%;
     border-radius: 7px;
     padding: var(--input);
-    box-shadow: 0px 0px 13px 1px rgba(191,229,78,0.3);
+    box-shadow: 0px 0px 10px 1px rgba(191,229,78,0.37);
+    background-color: rgba(167, 163, 163, 0.5);
+    color: var(--primary-text-color);
+    border-style: none;
+    outline: none;
 }
 
+/* Main Input Title Split */
+.sec--add-teams .split{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Main Input Title Button */
+.sec--add-teams .split > button{
+    border-style: none;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px 1px rgba(191,229,78,0.37);
+    background-color: rgba(167, 163, 163, 0.5);
+    color: var(--primary-text-color);
+    padding: var(--button);
+    color: var(--primary-text-color);
+    font-weight: 600;
+}
+.sec--add-teams .split > button:active{
+    background-color: rgba(167, 163, 163, 0.4);
+}
+.sec--add-teams input::placeholder{
+    color: var(--secondary-text-color);
+}
+
+.teamlid--add-teams{
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 1.2vw, 100rem);
+}
+
+/* Main Inputs SVG Split */
 .single-teamlid--add-teams{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: var(--regularSVG);
+}
+
+/* Media query Add Team Page */
+@media only screen and (max-width: 368px) {
+    .sec--add-teams .split{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: clamp(1rem, 2vw, 100rem);
+    }
 }
