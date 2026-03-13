@@ -158,6 +158,10 @@ Global: Text
     filter: brightness(0) saturate(100%) invert(52%) sepia(3%) saturate(6635%) hue-rotate(39deg) brightness(83%) contrast(93%);
 }
 
+.teamlid--add-teams .single-teamlid--add-teams img:active{
+    transform: scale(105%);
+}
+
 /* Title First */
 .sec--add-teams .first{
     font-size: var(--titleH2);
