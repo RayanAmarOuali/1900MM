@@ -1,3 +1,8 @@
+
+<?php 
+include '../include/nav.html';
+?>   
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +11,7 @@
      <title>Document</title>
      <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="body body--add-teams">
+<body class="body--add-teams">
      <main class="main--add-teams">
           <h1>Teams Aanmaken</h1>
           <p>Maak een nieuw team aan voor de escape room en voeg leden toe.</p>
