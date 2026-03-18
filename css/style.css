@@ -268,6 +268,15 @@ Global: Text
     color: var(--primary-text-color);
     border-style: none;
     outline: none;
+    transition: all 200ms;
+}
+
+.sec--add-teams input:hover{
+    background-color: rgba(167, 163, 163, 0.4);
+}
+
+.sec--add-teams input:focus{
+    box-shadow: 0px 0px 15px 1px rgba(191,229,78,0.5);
 }
 
 /* Main Input Title Split */
@@ -288,12 +297,20 @@ Global: Text
     padding: var(--button);
     color: var(--primary-text-color);
     font-weight: 600;
+    transition: all 150ms;
 }
+
 .sec--add-teams .split > button:active{
     background-color: rgba(167, 163, 163, 0.4);
 }
+
+.sec--add-teams .split > button:hover{
+    box-shadow: 0px 0px 15px 1px rgba(191,229,78,0.4);
+}
+
 .sec--add-teams input::placeholder{
     color: var(--secondary-text-color);
+    font-size: var(--containerSubText);
 }
 
 .teamlid--add-teams{
@@ -308,6 +325,15 @@ Global: Text
     flex-direction: row;
     align-items: center;
     gap: var(--regularSVG);
+}
+
+.single-teamlid--add-teams img{
+    transition: all 200ms;
+
+}
+
+.single-teamlid--add-teams img:hover{
+    filter: brightness(0) saturate(100%) invert(75%) sepia(9%) saturate(1982%) hue-rotate(38deg) brightness(74%) contrast(104%);
 }
 
 /* Media query Add Team Page */
