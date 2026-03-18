@@ -1,2 +1,47 @@
-<!-- Op deze pagina maak je een team aan.
-     Voeg een veld toe voor de teamnaam en minstens twee velden voor de namen van de teamleden. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="body body--add-teams">
+     <main class="main--add-teams">
+          <h1>Teams Aanmaken</h1>
+          <p>Maak een nieuw team aan voor de escape room en voeg leden toe.</p>
+          <section class="sec--add-teams">
+               <div class="svg first">
+                    <img src="../assets/group-svgrepo-com (3).svg" alt="">
+                    <h2>Team Details</h2>
+               </div>
+               <div class="first-input">
+                    <h3 class="subtitle">Team Naam*</h3>
+                    <input type="text" placeholder="Bijv. De Ontsnappers">
+               </div>
+               <div class="line"></div>
+               <div class="split subtitle">
+                    <div class="svg">
+                         <img src="../assets/user-plus-svgrepo-com.svg" alt="">
+                         <h3>Teamleden</h3>
+                    </div>
+                    <button>+ Lid Toevoegen</button>
+               </div>
+               <div class="teamlid--add-teams">
+                    <div class="single-teamlid--add-teams">
+                         <input type="text" name="" id="" placeholder="Naam teamlid 1">
+                         <img src="../assets/trash-bin-trash-svgrepo-com.svg" alt="">
+                    </div>
+                    <div class="single-teamlid--add-teams">
+                         <input type="text" name="" id="" placeholder="Naam teamlid 2">
+                         <img src="../assets/trash-bin-trash-svgrepo-com.svg" alt="">
+                    </div>
+                    <div class="single-teamlid--add-teams">
+                         <input type="text" name="" id="" placeholder="Naam teamlid 3 (Optioneel)">
+                         <img src="../assets/trash-bin-trash-svgrepo-com.svg" alt="">
+                    </div>  
+               </div>        
+          </section>
+     </main>
+</body>
+</html>
