@@ -345,3 +345,45 @@ Global: Text
         gap: clamp(1rem, 2vw, 100rem);
     }
 }
+
+/* === Show All Teams Page === */
+.show_all_teams-body{
+    background-color: #000;
+}
+
+.show_all_teams-body section{
+    padding: clamp(1.5rem, 3%, 100rem) clamp(1.5rem, 8%, 100rem);
+}
+
+.show_all_teams-body h1{
+    color: rgba(191, 229, 78, 0.8);
+}
+
+.show_all_teams-table{
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #717171;
+}
+
+.show_all_teams-row th,
+.show_all_teams-row td {
+    border: 1px solid #717171;
+    text-align: left;
+    padding: 1vw;
+    font-size: clamp(1rem, 1.2vw, 100rem);
+}
+
+.show_all_teams-row:nth-child(even){
+    background-color: #181818;
+}
+
+.show_all_teams-row th{
+    background-color: rgba(191, 229, 78, 0.8);
+}
+
+.show_all_teams-row td{
+    color: white;
+}

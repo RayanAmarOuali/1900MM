@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bodyin">
-  
+  <?php include "include/nav.html"; ?>
 <div class="divin">
 <h1 class="h1in">Welkom in de Horror Dierentuin… </h1>
 
