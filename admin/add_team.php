@@ -20,32 +20,38 @@ include '../include/nav.html';
                     <img src="../assets/group-svgrepo-com (3).svg" alt="">
                     <h2>Team Details</h2>
                </div>
-               <div class="first-input">
-                    <h3 class="subtitle">Team Naam*</h3>
-                    <input type="text" placeholder="Bijv. De Ontsnappers">
-               </div>
-               <div class="line"></div>
-               <div class="split subtitle">
-                    <div class="svg">
-                         <img src="../assets/user-plus-svgrepo-com.svg" alt="">
-                         <h3>Teamleden</h3>
+               <form action="" method="POST">
+                    <div class="first-input">
+                         <h3 class="subtitle">Team Naam*</h3>
+                         <input type="text" name="teamname" placeholder="Bijv. De Ontsnappers">
                     </div>
-                    <button>+ Lid Toevoegen</button>
-               </div>
-               <div class="teamlid--add-teams">
-                    <div class="single-teamlid--add-teams">
-                         <input type="text" name="" id="" placeholder="Naam teamlid 1">
-                         <img src="../assets/trash-bin-trash-svgrepo-com.svg" alt="">
+                    <div class="line"></div>
+                    <div class="split subtitle">
+                         <div class="svg">
+                              <img src="../assets/user-plus-svgrepo-com.svg" alt="">
+                              <h3>Teamleden</h3>
+                         </div>
+                         <button type="button">+ Lid Toevoegen</button>
                     </div>
-                    <div class="single-teamlid--add-teams">
-                         <input type="text" name="" id="" placeholder="Naam teamlid 2">
-                         <img src="../assets/trash-bin-trash-svgrepo-com.svg" alt="">
+                    <div class="teamlid--add-teams">
+                         <div class="single-teamlid--add-teams">
+                              <input type="text" name="lidnaam[]" id="" placeholder="Naam teamlid 1">
+                              <img src="../assets/trash-bin-trash-svgrepo-com.svg" alt="">
+                         </div>
+                         <div class="single-teamlid--add-teams">
+                              <input type="text" name="lidnaam[]" id="" placeholder="Naam teamlid 2">
+                              <img src="../assets/trash-bin-trash-svgrepo-com.svg" alt="">
+                         </div>
+                         <div class="single-teamlid--add-teams">
+                              <input type="text" name="lidnaam[]" id="" placeholder="Naam teamlid 3 (Optioneel)">
+                              <img src="../assets/trash-bin-trash-svgrepo-com.svg" alt="">
+                         </div>  
+                    </div>    
+                    <div class="line"></div>
+                    <div class="split subtitle">
+                         <button type="submit">Submit</button>
                     </div>
-                    <div class="single-teamlid--add-teams">
-                         <input type="text" name="" id="" placeholder="Naam teamlid 3 (Optioneel)">
-                         <img src="../assets/trash-bin-trash-svgrepo-com.svg" alt="">
-                    </div>  
-               </div>        
+               </form>
           </section>
      </main>
 </body>
